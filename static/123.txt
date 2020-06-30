@@ -1,0 +1,33 @@
+   //禁止右键
+   document.addEventListener('contextmenu',function(event){
+      event = window.event || event
+      event.returnValue = false
+    })
+    
+     // 禁止F12
+     document.addEventListener('keydown',function(event){
+      event = window.event || event
+      if(window.event && window.event.keyCode == 123) {
+        // event.keyCode =0;
+        event.returnValue = false
+      }
+    })
+
+    //禁止任何键盘敲击事件（防止F12和shift+ctrl+i调起开发者工具） 
+    window.onkeydown = window.onkeyup = window.onkeypress = function () { 
+        window.event.returnValue = false; 
+        return false; 
+    } 
+    //如果用户在工具栏调起开发者工具，那么判断浏览器的可视高度和可视宽度是否有改变，如有改变则关闭本页面 
+    var h = window.innerHeight,w=window.innerWidth; 
+    window.onresize = function () { 
+        if (h!= window.innerHeight||w!=window.innerWidth){ 
+            window.close(); 
+            window.location = "about:blank"; 
+        } 
+    }
+
+
+
+var tempwindow=window.open('_blank')
+tempwindow.location = res.data

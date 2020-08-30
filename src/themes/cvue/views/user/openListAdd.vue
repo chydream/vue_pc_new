@@ -31,13 +31,12 @@
 </template>
 <script>
 import cvueDialog from '@/components/cvue-dialog'
-import cvueTable from '@/components/cvue-table'
+// import cvueTable from '@/components/cvue-table'
 import {validPhone} from '@/util/validator.js'
 export default {
     name: 'openListAdd',
     components: {
-        cvueDialog,
-        cvueTable
+        cvueDialog
     },
     data () {
         return {

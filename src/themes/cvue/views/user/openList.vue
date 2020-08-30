@@ -64,15 +64,14 @@
 <script>
 import {mapGetters} from 'vuex'
 import cvueTable from '@/components/cvue-table'
-import cvueDialog from '@/components/cvue-dialog'
+// import cvueDialog from '@/components/cvue-dialog'
 import openListAdd from './openListAdd'
 import openRecord from './openRecord'
-import { baseUrl } from '@/config/config.js'
+// import { baseUrl } from '@/config/config.js'
 export default {
     name: 'openList',
     components: {
         cvueTable,
-        cvueDialog,
         openListAdd,
         openRecord
     },

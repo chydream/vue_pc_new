@@ -163,6 +163,7 @@ export function setDeptData (arr) {
       // item.authorityList.forEach((item, i) => {
       //   item.authorityList[i].checked = false
       // })
+      console.log(index)
       this.setDeptData(item.children)
     } else {
       // arr[index].disabled = true
@@ -184,7 +185,7 @@ export function flatNavList (arr) {
   }
 }
 // 扁平化生成树
-function getTree1 (treeData) {
+export function getTree1 (treeData) {
   for (var i = 0; i < treeData.length; i++) {
     treeData[i].children = []
     for (var j = 0; j < treeData.length; j++) {

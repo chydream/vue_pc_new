@@ -108,15 +108,15 @@ export default {
       })
     },
     bgAnimation () {
-      var timer = null
-      var interval = 5000
-      timer = setInterval(() => {
-        if (this.activeIndex < 3) {
-          this.activeIndex++
-        } else {
-          this.activeIndex = 0
-        }
-      }, interval)
+      // var timer = null
+      // var interval = 5000
+      // timer = setInterval(() => {
+      //   if (this.activeIndex < 3) {
+      //     this.activeIndex++
+      //   } else {
+      //     this.activeIndex = 0
+      //   }
+      // }, interval)
     },
     getCookie () {
       if (document.cookie.length > 0) {

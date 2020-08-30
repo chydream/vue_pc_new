@@ -1,28 +1,58 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <router-view/>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
 export default {
   name: 'App',
-  components: {
-    HelloWorld
+  watch: {
+    '$route' (to, from) {
+      // this.handleLoading(2000)
+    }
   }
 }
 </script>
 
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+<style lang="scss">
+@import url('./style/reset.css');
+html,body{
+  width: 100%;
+  height: 100%;
+}
+#app{
+  width: 100%;
+  height: 100%;
+}
+:root #app{
+  overflow: hidden;
+}
+body .el-table th.gutter {
+  display: table-cell !important;
+}
+.home-form{
+    .el-form-item{
+        margin-bottom: 0px !important;
+    }
+    .search-btn{
+        margin-top: 3px;
+    }
+}
+.mt-15{
+    margin-bottom: 10px;
+}
+.el-tooltip__popper.is-dark{
+  background-color: rgba(50, 50, 50, 0.7) !important;
+}
+.el-tooltip__popper[x-placement^="top"] .popper__arrow{
+  border-top-color: rgba(50, 50, 50, 0.7) !important;
+}
+.el-tooltip__popper[x-placement^="top"] .popper__arrow::after{
+  border-top-color: rgba(50, 50, 50, 0.7) !important;
+  opacity: 0 !important;
+}
+.el-card__body .home-body {
+    margin-top: -15px;
 }
 </style>

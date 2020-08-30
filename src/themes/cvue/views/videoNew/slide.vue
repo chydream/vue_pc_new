@@ -4,7 +4,7 @@
   </div>
 </template>
 <script>
-import videoNew from './video'
+// import videoNew from './video'
 export default {
   name: 'slide'
 }

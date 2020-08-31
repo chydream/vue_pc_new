@@ -9,6 +9,7 @@ export default {
   name: 'App',
   watch: {
     '$route' (to, from) {
+      console.log(to, from);
       // this.handleLoading(2000)
     }
   }

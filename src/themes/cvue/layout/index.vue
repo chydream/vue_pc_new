@@ -19,7 +19,7 @@
   </div>
 </template>
 <script>
-import {mapState, mapGetters} from 'vuex'
+import {mapGetters} from 'vuex'
 import left from './left'
 import rightTop from './rightTop'
 import rightTags from './rightTags'
@@ -62,6 +62,7 @@ export default {
     next((vm) => {
       // 页面缓存配置
       // vm.$store.commit('common/KEEP_ALIVE', vm.keepAlivePage)
+      console.log(vm)
     })
   },
   beforeRouteLeave (to, from, next) {
@@ -80,6 +81,7 @@ export default {
   .el-aside{
     background: #00142a;
     color: rgba(255, 255, 255, 0.65);
+    float: left\0;
   }
   .el-header{
     background: #fff;

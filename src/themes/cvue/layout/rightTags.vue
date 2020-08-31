@@ -1,5 +1,5 @@
 <template>
-   <div class="header-tags" style="position:relative;">
+   <div class="header-tags">
         <div class="tags-container">
             <div class="tags-box" ref="tagBox" @contextmenu.prevent.stop="handleContextmenu">
                 <div class="tags-list" ref="tagList" @mousewheel="handleMouseWheel">
@@ -153,6 +153,8 @@ export default {
   box-shadow: 0 1px 4px rgba(0, 21, 41, 0.08);
   // padding: 0 20px;
   z-index:100;
+  position:relative;
+  position:static\0;
 }
 .tags-container {
     position: relative;

@@ -9,7 +9,7 @@ export default {
   name: 'App',
   watch: {
     '$route' (to, from) {
-      console.log(to, from)
+      console.log(to, from);
       // this.handleLoading(2000)
     }
   }
@@ -25,6 +25,9 @@ html,body{
 #app{
   width: 100%;
   height: 100%;
+}
+:root #app{
+  overflow: hidden;
 }
 body .el-table th.gutter {
   display: table-cell !important;
